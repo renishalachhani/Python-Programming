@@ -1,0 +1,64 @@
+#PRUEBA
+
+#Vamos a realizar un recomendador de películas, y tenemos a un equipo de diseño y desarrollo 
+#web trabajando en un frontend de lo más chulo. Nosotros nos vamos a encargar de la lógica de 
+#la interacción con OpenAI
+
+#El usuario va a introducir un género de películas y tres películas que le hayan gustado, 
+#y en base a esa información, el modelo lingüistico va a recomendar tres películas para ver.
+
+#Necesitamos preguntar de forma que la información quede guardada en un diccionario de Python, 
+#donde almacenemos el título de la película, el año de estreno, el género, los actores 
+#principales (un único valor) y su nota media en Filmaffinity.
+
+#Es muy importante que el input sea el adecuado, para que luego la salida también lo sea
+
+#Imprime por pantalla el diccionario bien formateado, donde el usuario vea de forma clara 
+#la información.
+
+
+genero = input('Introduce un género de película: ')
+
+lista = []
+diccionario = {}
+num = 0
+
+while num < 3:
+    peli=input("Introduce una película: ")
+    lista.append(peli)
+    num +=1
+
+#print('El género elegido es: ',genero)
+#print(lista,'\n')
+
+prompt = f"""
+
+Teniendo en cuenta el género '''{genero}''' de película y las tres películas que introduzca el 
+usuario '''{lista[0]}''', '''{lista[1]}''','''{lista[2]}''' , elige otras tres películas 
+recomendadas para ver. De las películas que recomiendes, almacena el año de estreno, el género de la 
+película, un actor principal de la película y su nota media en Filmaffinity. 
+
+Crea un diccionario y en su interior pon como clave sólo los nombres de las películas recomendadas
+y como valor el conjunto de su información (título, año, género, actor principal y nota media),
+y nombra este diccionario como Peliculas.
+
+Como resultado, no me muestres las películas recomendadas. Muéstrame sólamente el diccionario 
+Peliculas.
+
+
+"""
+response = get_completion(prompt)
+print('\nEsta es mi recomendación: \n',response)
+prompt2 = prompt + response
+response2 = ''
+while True:
+    pregunta = input('')
+    
+    prompt2 += response2 + pregunta
+    response2 = get_completion(prompt2)
+    print('\nAquí tienes tu petición: \n',response2)
+
+    opcion = input('¿Quieres continuar? si/no: ')
+
+    if opcion.lower() == "no":
+        break

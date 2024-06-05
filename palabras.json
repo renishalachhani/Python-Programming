@@ -1,0 +1,42 @@
+[
+    {
+        "palabra": "manzana",
+        "pista": "Es una fruta redonda y de color rojo"
+    },
+    {
+        "palabra": "gato",
+        "pista": "Es un animal doméstico que maulla"
+    },
+    {
+        "palabra": "coche",
+        "pista": "Se utiliza para transportarse en la carretera"
+    },
+    {
+        "palabra": "sol",
+        "pista": "Es una estrella que ilumina y calienta"
+    },
+    {
+        "palabra": "computadora",
+        "pista": "Es un dispositivo electrónico que permite realizar tareas y procesar información"
+    },
+    {
+        "palabra": "futbol",
+        "pista": "Es un deporte que se juega con una pelota y dos equipos"
+    },
+    {
+        "palabra": "libro",
+        "pista": "Es un conjunto de hojas escritas y encuadernadas"
+    },
+    {
+        "palabra": "mariposa",
+        "pista": "Es un insecto volador de colores vistosos"
+    },
+    {
+        "palabra": "montaña",
+        "pista": "Es una elevación natural de terreno que suele ser más alta que una colina"
+    },
+    {
+        "palabra": "reloj",
+        "pista": "Es un dispositivo que se utiliza para medir el tiempo"
+    }
+]

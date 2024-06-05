@@ -1,0 +1,402 @@
+[
+  {
+    "texto": "Me siento muy emocionado por el proyecto",
+    "id": 1
+  },
+  {
+    "texto": "Estoy completamente agotado después de un largo día de trabajo",
+    "id": 2
+  },
+  {
+    "texto": "¡Qué hermoso día hace hoy!",
+    "id": 3
+  },
+  {
+    "texto": "Me siento bastante estresado con los exámenes",
+    "id": 4
+  },
+  {
+    "texto": "Estoy muy agradecido por el apoyo de mis amigos",
+    "id": 5
+  },
+  {
+    "texto": "Me siento frustrado por no entender este concepto",
+    "id": 6
+  },
+  {
+    "texto": "¡Ganamos el partido! Estoy eufórico",
+    "id": 7
+  },
+  {
+    "texto": "Hoy ha sido un día muy productivo",
+    "id": 8
+  },
+  {
+    "texto": "Me siento tranquilo y relajado en la playa",
+    "id": 9
+  },
+  {
+    "texto": "Estoy emocionado por el concierto de esta noche",
+    "id": 10
+  },
+  {
+    "texto": "Me siento muy preocupado por la situación económica",
+    "id": 11
+  },
+  {
+    "texto": "Hoy fue un día lleno de sorpresas",
+    "id": 12
+  },
+  {
+    "texto": "Estoy ansioso por el resultado de la entrevista",
+    "id": 13
+  },
+  {
+    "texto": "Me siento orgulloso de mis logros",
+    "id": 14
+  },
+  {
+    "texto": "Estoy decepcionado por no haber sido seleccionado",
+    "id": 15
+  },
+  {
+    "texto": "Me siento abrumado por la cantidad de trabajo",
+    "id": 16
+  },
+  {
+    "texto": "Estoy encantado con el regalo que recibí",
+    "id": 17
+  },
+  {
+    "texto": "Me siento nostálgico recordando viejos tiempos",
+    "id": 18
+  },
+  {
+    "texto": "Estoy enojado por la falta de organización",
+    "id": 19
+  },
+  {
+    "texto": "Me siento inspirado por el discurso del líder",
+    "id": 20
+  },
+  {
+    "texto": "Hoy ha sido un día realmente aburrido",
+    "id": 21
+  },
+  {
+    "texto": "Estoy emocionado por el próximo viaje",
+    "id": 22
+  },
+  {
+    "texto": "Me siento nervioso antes de la presentación",
+    "id": 23
+  },
+  {
+    "texto": "Estoy alegre por el éxito de mi amigo",
+    "id": 24
+  },
+  {
+    "texto": "Me siento desanimado después de recibir críticas",
+    "id": 25
+  },
+  {
+    "texto": "Estoy contento con mi progreso en el aprendizaje del piano",
+    "id": 26
+  },
+  {
+    "texto": "Me siento inseguro en esta situación",
+    "id": 27
+  },
+  {
+    "texto": "Estoy emocionado por el estreno de la película",
+    "id": 28
+  },
+  {
+    "texto": "Me siento triste por la pérdida de un ser querido",
+    "id": 29
+  },
+  {
+    "texto": "Estoy entusiasmado por el inicio de las vacaciones",
+    "id": 30
+  },
+  {
+    "texto": "Me siento desconcertado por las instrucciones confusas",
+    "id": 31
+  },
+  {
+    "texto": "Hoy ha sido un día de muchas risas",
+    "id": 32
+  },
+  {
+    "texto": "Estoy preocupado por el cambio climático",
+    "id": 33
+  },
+  {
+    "texto": "Me siento aliviado después de resolver un problema complicado",
+    "id": 34
+  },
+  {
+    "texto": "Estoy emocionado por la llegada de la primavera",
+    "id": 35
+  },
+  {
+    "texto": "Me siento confundido con las nuevas instrucciones",
+    "id": 36
+  },
+  {
+    "texto": "Estoy orgulloso de mi equipo por ganar el campeonato",
+    "id": 37
+  },
+  {
+    "texto": "Me siento exhausto después de correr una maratón",
+    "id": 38
+  },
+  {
+    "texto": "Estoy emocionado por la oportunidad de viajar",
+    "id": 39
+  },
+  {
+    "texto": "Me siento agradecido por la amabilidad de los demás",
+    "id": 40
+  },
+  {
+    "texto": "Estoy frustrado por no encontrar las llaves",
+    "id": 41
+  },
+  {
+    "texto": "Me siento nostálgico al escuchar una canción antigua",
+    "id": 42
+  },
+  {
+    "texto": "Estoy ansioso por el resultado del examen",
+    "id": 43
+  },
+  {
+    "texto": "Me siento emocionado por la boda de mi hermana",
+    "id": 44
+  },
+  {
+    "texto": "Estoy decepcionado por el final de la serie",
+    "id": 45
+  },
+  {
+    "texto": "Me siento abrumado por las responsabilidades",
+    "id": 46
+  },
+  {
+    "texto": "Estoy feliz por la llegada de un nuevo miembro a la familia",
+    "id": 47
+  },
+  {
+    "texto": "Me siento nostálgico al ver fotos de la infancia",
+    "id": 48
+  },
+  {
+    "texto": "Estoy enojado por la falta de respeto",
+    "id": 49
+  },
+  {
+    "texto": "Me siento inspirado por el arte de un pintor famoso",
+    "id": 50
+  },
+  {
+    "texto": "Hoy ha sido un día lleno de desafíos",
+    "id": 51
+  },
+  {
+    "texto": "Estoy emocionado por el lanzamiento de un nuevo producto",
+    "id": 52
+  },
+  {
+    "texto": "Me siento ansioso por la entrevista de trabajo",
+    "id": 53
+  },
+  {
+    "texto": "Estoy orgulloso de haber completado mi proyecto personal",
+    "id": 54
+  },
+  {
+    "texto": "Me siento desilusionado después de perder una oportunidad",
+    "id": 55
+  },
+  {
+    "texto": "Estoy abrumado por las tareas pendientes",
+    "id": 56
+  },
+  {
+    "texto": "Me siento emocionado por el nacimiento de un bebé",
+    "id": 57
+  },
+  {
+    "texto": "Estoy nervioso antes de subir al escenario",
+    "id": 58
+  },
+  {
+    "texto": "Me siento contento por el progreso en mi entrenamiento",
+    "id": 59
+  },
+  {
+    "texto": "Estoy triste por la despedida de un amigo",
+    "id": 60
+  },
+  {
+    "texto": "Me siento entusiasmado por las vacaciones de verano",
+    "id": 61
+  },
+  {
+    "texto": "Estoy desconcertado por las instrucciones contradictorias",
+    "id": 62
+  },
+  {
+    "texto": "Hoy ha sido un día de reflexión y crecimiento personal",
+    "id": 63
+  },
+  {
+    "texto": "Estoy preocupado por el impacto ambiental",
+    "id": 64
+  },
+  {
+    "texto": "Me siento aliviado después de resolver un conflicto",
+    "id": 65
+  },
+  {
+    "texto": "Estoy emocionado por el comienzo de las vacaciones de invierno",
+    "id": 66
+  },
+  {
+    "texto": "Me siento confundido con las nuevas tecnologías",
+    "id": 67
+  },
+  {
+    "texto": "Estoy orgulloso de mi logro académico",
+    "id": 68
+  },
+  {
+    "texto": "Me siento agotado después de un largo viaje",
+    "id": 69
+  },
+  {
+    "texto": "Estoy emocionado por el próximo concierto de mi banda favorita",
+    "id": 70
+  },
+  {
+    "texto": "Me siento agradecido por las oportunidades que he tenido",
+    "id": 71
+  },
+  {
+    "texto": "Estoy frustrado por los problemas técnicos",
+    "id": 72
+  },
+  {
+    "texto": "Me siento nostálgico al visitar mi ciudad natal",
+    "id": 73
+  },
+  {
+    "texto": "Estoy ansioso por el resultado del partido",
+    "id": 74
+  },
+  {
+    "texto": "Me siento emocionado por la graduación",
+    "id": 75
+  },
+  {
+    "texto": "Estoy decepcionado por la cancelación del evento",
+    "id": 76
+  },
+  {
+    "texto": "Me siento abrumado por las demandas del trabajo",
+    "id": 77
+  },
+  {
+    "texto": "Estoy feliz por el éxito de mi hermano en su nuevo negocio",
+    "id": 78
+  },
+  {
+    "texto": "Me siento nostálgico al recordar mis años de estudiante",
+    "id": 79
+  },
+  {
+    "texto": "Estoy enojado por la falta de honestidad",
+    "id": 80
+  },
+  {
+    "texto": "Me siento inspirado por el documental que vi",
+    "id": 81
+  },
+  {
+    "texto": "Hoy ha sido un día lleno de aventuras",
+    "id": 82
+  },
+  {
+    "texto": "Estoy emocionado por el lanzamiento de un nuevo libro",
+    "id": 83
+  },
+  {
+    "texto": "Me siento ansioso por el próximo viaje",
+    "id": 84
+  },
+  {
+    "texto": "Estoy orgulloso de mi logro deportivo",
+    "id": 85
+  },
+  {
+    "texto": "Me siento desilusionado por la falta de apoyo",
+    "id": 86
+  },
+  {
+    "texto": "Estoy abrumado por la cantidad de información",
+    "id": 87
+  },
+  {
+    "texto": "Me siento emocionado por la oportunidad de aprender algo nuevo",
+    "id": 88
+  },
+  {
+    "texto": "Estoy triste por la separación de mis padres",
+    "id": 89
+  },
+  {
+    "texto": "Me siento entusiasmado por el inicio de un nuevo proyecto",
+    "id": 90
+  },
+  {
+    "texto": "Estoy desconcertado por las decisiones de la empresa",
+    "id": 91
+  },
+  {
+    "texto": "Hoy ha sido un día lleno de sorpresas agradables",
+    "id": 92
+  },
+  {
+    "texto": "Estoy preocupado por la situación política",
+    "id": 93
+  },
+  {
+    "texto": "Me siento aliviado después de superar un obstáculo",
+    "id": 94
+  },
+  {
+    "texto": "Estoy emocionado por el inicio de un nuevo año",
+    "id": 95
+  },
+  {
+    "texto": "Me siento confundido con los cambios en mi rutina",
+    "id": 96
+  },
+  {
+    "texto": "Estoy orgulloso de mi equipo por alcanzar el objetivo",
+    "id": 97
+  },
+  {
+    "texto": "Me siento exhausto después de un día agotador",
+    "id": 98
+  },
+  {
+    "texto": "Estoy emocionado por la posibilidad de viajar al extranjero",
+    "id": 99
+  },
+  {
+    "texto": "Me siento agradecido por la solidaridad de la comunidad",
+    "id": 100
+  }
+]

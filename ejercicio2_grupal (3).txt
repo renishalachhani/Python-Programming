@@ -1,0 +1,164 @@
+import json
+import random
+import math
+import datetime
+import time
+
+
+with open("productos.json") as f:
+    data = json.loads(f.read())
+
+    # load json otra vez en backup
+with open("productos.json") as f:
+    data_backup = json.loads(f.read())
+    
+nuevos_productos = {}
+    
+while True:
+    opcion = 0
+    while True:
+        opcion = int(input("Menu:\n 1. Registrar venta \n 2. Consultar producto \n 3. Consultar venta diaria \n 4. Generar reporte de ventas \n 5. Salir \n Elige el número de la opción: "))
+        if opcion in range(1,6):
+            print("\nhas elegido la opcion: ", opcion)
+            break
+        else:
+            print("\nelige la opcion otra vez")
+
+        
+
+
+    match opcion:
+        case 1:
+            print("\nRegistrar Venta")
+        
+            op = int(input("\n 1. Registrar para un nuevo producto \n 2. Modificar un producto existente\n"))
+        
+            match op:
+                case 1:
+                    nombre = input("Inserta nombre del producto: \n")
+                    precio = float(input("Precio del producto: \n"))
+                    precio = round(precio,2)
+                    stock = int(input("Insertar stock: \n"))
+                    cantidad_vendida = int(input("Insertar la cantidad vendida: \n"))
+                    nuevos_productos[nombre] = cantidad_vendida
+                    
+                
+                    entry = {'nombre': nombre, 'precio':precio, 'stock':stock}
+                    print("Tu stock inicial era: ", stock + cantidad_vendida)
+                    print(entry, "\n")
+                    print(nuevos_productos, "\n")
+                    data.append(entry)
+                    
+                
+                
+                case 2:
+                
+                    num = 0
+                    while num < len(data):
+                        print("Producto ",num+1)
+                        print("nombre: ",data[num]["nombre"],"\n precio: ",data[num]["precio"],"\n stock: ",data[num]["stock"],"\n")
+                        num += 1
+                
+                    producto = int(input("Inserta el número del producto que quieres modificar"))
+                    print("quieres modificar este producto: \n","nombre: ",data[producto-1]["nombre"],"\n precio: ",data[producto-1]["precio"],"\n stock: ",data[producto-1]["stock"],"\n")
+                
+                    opcion2 = ""
+                    opcion2 = input("quieres modificar el nombre si/no")
+                    if opcion2.lower() == "si":
+                        nombre = input("Inserta nombre del producto: \n")
+                        data[producto-1]["nombre"] = nombre
+                    
+                    opcion2 = input("quieres modificar el precio si/no")
+                    if opcion2.lower() == "si":
+                        precio = float(input("Inserta precio del producto: \n"))
+                        precio = round(precio,2)
+                        data[producto-1]["precio"] = precio
+                    
+                    opcion2 = input("quieres modificar el stock si/no")
+                    if opcion2.lower() == "si":
+                        stock = int(input("Inserta stock del producto: \n"))
+                        data[producto-1]["stock"] = stock
+                    
+                    
+                    print("nombre: ",data[producto-1]["nombre"],"\n precio: ",data[producto-1]["precio"],"\n stock: ",data[producto-1]["stock"],"\n")
+        
+        case 2:
+            print("\nConsultar Producto")
+        
+            num = 0
+            while num < len(data):
+                print("Producto ",num+1)
+                print("nombre: ",data[num]["nombre"],"\n")
+                num += 1
+            producto = int(input("Inserta el número del producto que quieres consultar: "))
+            print("quieres consultar este producto: \n","nombre: ",data[producto-1]["nombre"],"\n precio: ",data[producto-1]["precio"],"\n stock: ",data[producto-1]["stock"],"\n")       
+
+        case 3:
+            print("\nConsultar venta diaria")
+            
+            num = 0
+            precio_final = 0
+            cantidad_total = 0
+            while num < len(data):
+                if num < len(data_backup) and data[num]["stock"] != data_backup[num]["stock"]:
+                    #print("Producto ",num+1)
+                    #print("nombre: ",data[num]["nombre"],"\n precio: ",data[num]["precio"],"\n stock: ",data[num]["stock"],"\n")
+                    #print("Se han vendido ",data_backup[num]["stock"] - data[num]["stock"], " unidades")
+                    cantidad = data_backup[num]["stock"] - data[num]["stock"]
+                    precio_total = cantidad * data[num]["precio"]
+                    cantidad_total += cantidad
+                    precio_final += precio_total
+                elif num >= len(data_backup):
+                    cantidad = nuevos_productos[data[num]["nombre"]]
+                    precio_total = cantidad * data[num]["precio"]
+                    cantidad_total += cantidad
+                    precio_final += precio_total
+                    #print("Producto ",num+1)
+                    #print("nombre: ",data[num]["nombre"],"\n precio: ",data[num]["precio"],"\n stock: ",data[num]["stock"],"\n")
+                num += 1
+            x = datetime.datetime.now()
+            print("Fecha: ",x.date() , "\n")
+            #print("Tiempo: ",x.time() , "\n")
+            
+            print ("Tiempo: ", time.strftime('%H:%M:%S'),"\n")
+            print("Has vendido ",cantidad_total,"hoy y tu total es: ",precio_final,"€" )
+
+        case 4:
+            print("\nGenerar reporte de ventas")
+            
+            num = 0
+            precio_final = 0
+            while num < len(data):
+                if num < len(data_backup) and data[num]["stock"] != data_backup[num]["stock"]:
+                    print("Producto ",num+1)
+                    print("nombre: ",data[num]["nombre"],"\n precio: ",data[num]["precio"],"\n stock: ",data[num]["stock"],"\n")
+                    cantidad = data_backup[num]["stock"] - data[num]["stock"]
+                    precio_total = cantidad * data[num]["precio"]
+                    print("Se han vendido ",cantidad, " unidades\n\n")
+                    print("El total del producto es ",precio_total, " €\n\n")
+                    precio_final += precio_total
+                elif num >= len(data_backup):
+                    print("Producto ",num+1)
+                    print("nombre: ",data[num]["nombre"],"\n precio: ",data[num]["precio"],"\n stock: ",data[num]["stock"],"\n")
+                    cantidad = nuevos_productos[data[num]["nombre"]]
+                    precio_total = cantidad * data[num]["precio"]
+                    print("Se han vendido ",cantidad, " unidades\n\n")
+                    print("El total del producto es ",precio_total, " €\n\n")
+                    precio_final += precio_total
+                num += 1
+            x = datetime.datetime.now()
+            print("Fecha: ",x.date() , "\n")
+            #print("Tiempo: ",x.time() , "\n")
+            
+            print ("Tiempo hora: ", time.strftime('%H:%M:%S'),"\n")
+            print("Tu total es: ",precio_final,"€" )
+        case 5:
+            break
+
+sr = json.dumps(data)
+json_convertido = json.loads(sr)    
+with open('articulos.json', 'w') as f:
+    json.dump(json_convertido, f, indent='\t')
+# modificar json data[0]['f'] = var
+print(data,"\n")
+print(data_backup)
